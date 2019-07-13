@@ -1,0 +1,25 @@
+﻿<Window x:Class="sotukenn.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" SizeToContent="WidthAndHeight" 
+        Loaded="Window_Loaded"
+        Closing="Window_Closing"
+        >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="323*"/>
+            <ColumnDefinition Width="49*"/>
+            <ColumnDefinition Width="74*"/>
+            <ColumnDefinition Width="200*"/>
+            <ColumnDefinition Width="63*"/>
+        </Grid.ColumnDefinitions>
+        <Image x:Name="ImageColor" Height="503" VerticalAlignment="Bottom" Grid.Column="3" Grid.ColumnSpan="4" RenderTransformOrigin="0.338,0.433" Margin="0,0,37,0" />
+        <Label x:Name="NotificationBlock" Grid.Column="3" RenderTransformOrigin="0.515,0.489" Content="異常なし" Width ="140" Height="58" Margin="1,0,182,445" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="GreenYellow"/>
+        <Canvas x:Name="CanvasBody" Height="503" VerticalAlignment="Bottom" Grid.Column="3" Grid.ColumnSpan="4" RenderTransformOrigin="0.338,0.433" Margin="0,0,37,0" Opacity="1"/>
+        <Label x:Name="Title2" Content="" HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="477" Width="700" Grid.ColumnSpan="7" RenderTransformOrigin="0.458,0.48" Padding="5" UseLayoutRounding="False" HorizontalContentAlignment="Center" VerticalContentAlignment="Stretch"  Margin="-117,0,0,26"/>
+        <Button x:Name="reset" Content="reset" Grid.Column="6" HorizontalAlignment="Left" Margin="178,53,0,0" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2" Click="reset_Click"/>
+    </Grid>
+</Window>
